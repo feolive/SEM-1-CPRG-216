@@ -1,0 +1,71 @@
+PS E:\SAIT\SEM1\CPRG216\Unit 2> & E:/Python/python.exe "e:/SAIT/SEM1/CPRG216/Unit 2/loop-calculator.py"
+Simple Calculator
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+0. Exit
+
+Enter your menu option: 1
+Enter first number: 5.1
+Enter second number: 1.7
+5.1 + 1.7 = 6.8
+
+Simple Calculator       
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+0. Exit
+
+Enter your menu option: 2
+Enter first number: 5.1
+Enter second number: 1.7
+5.1 - 1.7 = 3.3999999999999995
+
+Simple Calculator
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+0. Exit
+
+Enter your menu option: 3
+Enter first number: 5.1
+Enter second number: 1.7
+5.1 * 1.7 = 8.67
+
+Simple Calculator
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+0. Exit
+
+Enter your menu option: 4
+Enter first number: 5.1
+Enter second number: 1.7
+5.1 / 1.7 = 3.0
+
+Simple Calculator
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+0. Exit
+
+Enter your menu option: 4
+Enter first number: 10
+Enter second number: 0
+Cannot divide by zero
+
+Simple Calculator
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+0. Exit
+
+Enter your menu option: 0
+Calculator app closed
+PS E:\SAIT\SEM1\CPRG216\Unit 2> 

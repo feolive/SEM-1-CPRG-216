@@ -1,0 +1,11 @@
+line 3: syntax error "While" it should be "while"
+
+line 3: syntax error missing ":"
+
+line 4: Logic error, the variable Some_number would be incremented by value of in each iteration of the loop, 
+    so the value of Some_number would be 0+1+2+3+4+5+6+7+8+9+10 = 55
+
+line5: missing statement "i+=1" which is the increment the variable i without that its a non terminating loop
+
+line6: Syntax erorr in the print statement, it should be print() and 
+    the variable inside the print statement should be in the curly braces and should be "Some_number"

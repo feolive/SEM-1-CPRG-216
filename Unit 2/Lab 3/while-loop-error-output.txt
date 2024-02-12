@@ -1,0 +1,3 @@
+PS E:\SAIT\SEM1\CPRG216\Unit 2> & E:/Python/python.exe "e:/SAIT/SEM1/CPRG216/Unit 2/while-loop-error.py"
+55
+PS E:\SAIT\SEM1\CPRG216\Unit 2> 
