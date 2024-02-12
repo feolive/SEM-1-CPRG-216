@@ -2,4 +2,4 @@ PS E:\SAIT\SEM1\CPRG216\Unit 2> & E:/Python/python.exe "e:/SAIT/SEM1/CPRG216/Uni
 Enter an integer > 1: 22
 
 The average of the integers 1... 22 is  11.5
-PS E:\SAIT\SEM1\CPRG216\Unit 2> 
+PS E:\SAIT\SEM1\CPRG216\Unit 2>
