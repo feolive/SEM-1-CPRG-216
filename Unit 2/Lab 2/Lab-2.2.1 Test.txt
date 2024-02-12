@@ -1,0 +1,18 @@
+PS E:\SAIT\SEM1\CPRG216\Unit 2> & E:/Python/python.exe "e:/SAIT/SEM1/CPRG216/Unit 2/Lab- 2.2.1.py"
+Enter GIC Term: 3
+Enter the amount to invest: 10000
+Interest at end of term = $ 1,200.00
+Total at end of term = $ 11,200.00  
+
+PS E:\SAIT\SEM1\CPRG216\Unit 2> & E:/Python/python.exe "e:/SAIT/SEM1/CPRG216/Unit 2/Lab- 2.2.1.py"
+Enter GIC Term: 1
+Enter the amount to invest: 400
+Interest at end of term = $ 19.60
+Total at end of term = $ 419.60 
+
+PS E:\SAIT\SEM1\CPRG216\Unit 2> & E:/Python/python.exe "e:/SAIT/SEM1/CPRG216/Unit 2/Lab- 2.2.1.py"
+Enter GIC Term: 5
+Enter the amount to invest: 9999
+Interest at end of term = $ 1,874.81
+Total at end of term = $ 11,873.81  
+PS E:\SAIT\SEM1\CPRG216\Unit 2>     
