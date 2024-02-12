@@ -1,0 +1,9 @@
+PS E:\SAIT\SEM1\CPRG216\Unit 2> & E:/Python/python.exe "e:/SAIT/SEM1/CPRG216/Unit 2/Lab-2.1.py"
+Enter your first name: Sukhman
+Enter your last name: Singh
+Enter your age: 19
+Enter your GPA: 4.0
+Enter your major: SD
+Welcome to CPRG216 Sukhman Singh !
+Age  19 , GPA  4.0 , Major  SD    
+PS E:\SAIT\SEM1\CPRG216\Unit 2> 

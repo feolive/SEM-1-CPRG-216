@@ -1,0 +1,5 @@
+PS E:\SAIT\SEM1\CPRG216\Unit 2> & E:/Python/python.exe "e:/SAIT/SEM1/CPRG216/Unit 2/Lab-2.2.py"
+Enter radius of circle (cm): 5
+Circumference = 31.415926 cm
+Area = 78.539815 sqaure cm  
+PS E:\SAIT\SEM1\CPRG216\Unit 2> 
