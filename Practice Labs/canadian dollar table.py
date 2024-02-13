@@ -16,3 +16,12 @@ print("{:>10s} {:>10s}".format("====", "===="))
 print("{:>10s} {:>+10.4f}".format("Yesterday", yesterday))
 print("{:>10s} {:>+10.4f}".format("Today", today))
 print("{:>10s} {:>+10.4f}".format("Change", change))
+
+print("\n\n\n")
+#priny output aligned to 2 columns using f-strings
+print(f"{'Date':>10s} {'Rate':>10s}")
+print(f"{'====':>10s} {'====':>10s}")
+print(f"{'Yesterday':>10s} {yesterday:+10.4f}")
+print(f"{'Today':>10s} {today:+10.4f}")
+print(f"{'Change':>10s} {change:+10.4f}")
+
