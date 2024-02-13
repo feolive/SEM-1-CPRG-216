@@ -1,0 +1,7 @@
+PS E:\SAIT\SEM-1-CPRG-216> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Unit 2/Lab 4/Initial Extractor.py"
+Enter your full name: isa good programmer
+I.G.P.
+PS E:\SAIT\SEM-1-CPRG-216> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Unit 2/Lab 4/Initial Extractor.py"
+Enter your full name: frederick codes ALOT
+F.C.A.
+PS E:\SAIT\SEM-1-CPRG-216>
