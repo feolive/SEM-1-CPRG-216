@@ -8,6 +8,8 @@
 temp = []
 #sum of the temperatures
 sum = 0
+#above average counter
+c = 0
 #input temperature
 in_temp = eval(input("Enter a temperature: "))
 #while input is not 999
@@ -17,4 +19,8 @@ while in_temp != 999:
     in_temp = eval(input("Enter a temperature: "))
 #calculate the average
 average = sum / len(temp)
-print("The average temperature is", average)
+#iterate through the list
+for i in temp:
+    if i > average:
+        c += 1
+print(c ,"temperatures were above the average temperature of", format(average, ",.2f"))
