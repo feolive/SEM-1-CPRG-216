@@ -1,0 +1,9 @@
+PS E:\SAIT\SEM-1-CPRG-216> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Unit 2/Lab 4/Average_temperatures.py"
+Enter a temperature: 5.4
+Enter a temperature: 3.7
+Enter a temperature: 0
+Enter a temperature: 999
+2 temperatures were above the average temperature of 3.0
+PS E:\SAIT\SEM-1-CPRG-216> 
+
+
