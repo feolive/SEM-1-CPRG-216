@@ -4,6 +4,8 @@
 #Iterate through the list you created and count how many of the temperatures are above average.  
 #Print out the results as specified in the sample run below.
 
+
+
 #emply list
 temp = []
 #sum of the temperatures
