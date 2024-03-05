@@ -1,0 +1,13 @@
+PS E:\SAIT\SEM-1-CPRG-216> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Unit 2/Lab 5/Territory Population.py"
+Enter Population for Northwest Territories: 42514
+Enter Population for Yukon: 31530
+Enter Population for Nunavut: 31152
+
+Terriotry                       Population
+==========================================
+Northwest Territories               42,514
+Yukon                               31,530
+Nunavut                             31,152
+==========================================
+Total                              105,196
+PS E:\SAIT\SEM-1-CPRG-216> 

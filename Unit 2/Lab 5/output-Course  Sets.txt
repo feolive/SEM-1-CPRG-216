@@ -1,0 +1,23 @@
+PS E:\SAIT\SEM-1-CPRG-216> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Unit 2/Lab 5/Course Sets.py"
+Common 1st Year Courses:
+     MATH-237             
+     CPRG-216             
+     PHIL-241             
+     COMM-238             
+
+ITS-only 1st Year Courses:
+     CPRG-217             
+     CPSY-204             
+     CMPH-209             
+     CPNT-219             
+     CPSY-206             
+     CPNT-224             
+
+SD-only 1st Year Courses: 
+     CPRG-211             
+     CPSY-200             
+     CPRG-213             
+     CPRG-250             
+     CPSY-202             
+     CPNT-217
+PS E:\SAIT\SEM-1-CPRG-216> 
