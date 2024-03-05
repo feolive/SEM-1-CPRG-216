@@ -14,6 +14,7 @@ territory_population = {}
 for territory in territories:
     population = int(input(f'Enter Population for {territory}: '))
     territory_population[territory] = population
+
 #report
 print("")
 print(f"{'Terriotry': <30}\t{'Population': <30}")
