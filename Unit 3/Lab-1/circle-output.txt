@@ -1,0 +1,4 @@
+PS E:\SAIT\SEM-1-CPRG-216> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Unit 3/Lab-1/circle.py"
+Give the radius of a circle: 5
+Circumference: 31.416  Area: 78.540
+PS E:\SAIT\SEM-1-CPRG-216>        
