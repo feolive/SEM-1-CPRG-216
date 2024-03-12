@@ -13,17 +13,7 @@ def main():
         option = eval(input("Enter your menu option: "))
         if option == 0:
             print("Calculator app closed")
-            break
-        while True:
-            try:
-                option = int(input("Enter your menu option: "))
-                if option in [1, 2, 3, 4]:
-                    break
-            except ValueError:
-                option = eval(input("Enter your menu option: "))
-                if option == 0:
-                    print("Calculator app closed")
-                    i = -1
+            i = -1
         else:
             num_1 = float(input("Enter first number: "))
             num_2 = float(input("Enter second number: "))
