@@ -27,7 +27,7 @@ def main():
                 divide(num_1, num_2)
         else:
             while option not in ["1","2","3","4"]:
-                option = eval(input("Enter your menu option: "))
+                option = eval(input("Enter your menu option: "))    
 
 def sum(num_1, num_2):
     result = num_1 + num_2
