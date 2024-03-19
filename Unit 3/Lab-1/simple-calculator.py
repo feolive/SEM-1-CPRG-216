@@ -49,4 +49,5 @@ def divide(num_1, num_2):
         result = num_1 / num_2
         print(num_1, "/", num_2, "=", result)
         print("")
-main()
+if __name__ == "__main__":
+    main()
