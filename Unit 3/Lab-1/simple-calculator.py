@@ -10,21 +10,24 @@ def main():
         print("")
 
         #user input
-        option = eval(input("Enter your menu option: "))
-        if option == 0:
+        option = str(input("Enter your menu option: "))
+        if option == "0":
             print("Calculator app closed")
             i = -1
-        else:
+        elif option in ["1","2","3","4"]:
             num_1 = float(input("Enter first number: "))
             num_2 = float(input("Enter second number: "))
-            if option == 1:
+            if option == "1":
                 sum(num_1, num_2)
-            elif option == 2:
+            elif option == "2":
                 subtract(num_1, num_2)
-            elif option == 3:
+            elif option == "3":
                 multiply(num_1, num_2)
-            elif option == 4:
+            elif option == "4":
                 divide(num_1, num_2)
+        else:
+            while option not in ["1","2","3","4"]:
+                option = eval(input("Enter your menu option: "))
 
 def sum(num_1, num_2):
     result = num_1 + num_2
@@ -49,5 +52,6 @@ def divide(num_1, num_2):
         result = num_1 / num_2
         print(num_1, "/", num_2, "=", result)
         print("")
+
 if __name__ == "__main__":
     main()
