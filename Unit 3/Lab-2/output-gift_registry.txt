@@ -1,0 +1,17 @@
+Gift Registry
+Another gift? (Y/N): y
+Who is the gift from? James K.
+Enter gift type (Cash, Gift, Both): gift
+Enter description of gift:  pottery chip/dip platter
+Another gift? (Y/N): Y
+Who is the gift from? Uncle Fred and Janine
+Enter gift type (Cash, Gift, Both): cash
+Enter amount of cash gift: 65
+Another gift? (Y/N): y
+Who is the gift from? Auntie Em
+Enter gift type (Cash, Gift, Both): Both
+Enter amount of cash gift: 200
+Enter description of gift: $50 gift card for Earl's  
+Another gift? (Y/N): N
+File successfully written
+PS E:\SAIT\SEM-1-CPRG-216\Unit 3\Lab-2> 

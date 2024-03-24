@@ -1,0 +1,3 @@
+PS E:\SAIT\SEM-1-CPRG-216\Unit 3\Lab-2> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Unit 3/Lab-2/Gift_report.py"
+Received 6  gifts including cash of $1,550.00
+PS E:\SAIT\SEM-1-CPRG-216\Unit 3\Lab-2>

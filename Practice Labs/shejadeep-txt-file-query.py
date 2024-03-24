@@ -1,5 +1,4 @@
 f = open("E:\SAIT\SEM-1-CPRG-216\Practice Labs\input.txt", "r")
-fr = f.read()
 c = 0
 total = 0
 lines = f.readlines()
