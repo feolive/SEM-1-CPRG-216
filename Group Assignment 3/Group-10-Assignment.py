@@ -56,7 +56,6 @@ def display_student_header():
 
 #Function to display the student
 def display_student(index, names, ids, gpas):
-    display_student_header()
     print("{:<25}{:^25}{:>25}".format(names[index], ids[index], gpas[index]))
 
 #Function to list the students
