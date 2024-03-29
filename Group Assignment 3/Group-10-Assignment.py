@@ -4,6 +4,7 @@ import os
 #Declaring the global variables
 flag = None
 menu_option = ""
+index = 0
 
 #Function to load the students information from the file
 def load_students(file_path, names, ids, gpas):
@@ -92,6 +93,28 @@ def edit_student(index, names, ids, gpas):
     gpas[index] = float(input("Enter the new student GPA to edit: "))
     return names, ids, gpas
 
+#Function to delete the students
+def delete_student(index, names, ids, gpas):
+    names = names.pop(index)
+    ids = ids.pop(index)
+    gpas = gpas.pop(index)
+    print(f"Student with ID {ids} is deleted.")
+    return names, ids, gpas
+
+def find_student(id, ids):
+    if id in ids:
+        global index
+        global flag
+        index = ids.index(id)
+        flag = True
+        return index, flag
+    else:
+        print(f"No student with ID {id}")
+        flag = False
+
+#Function to calculate the average GPA
+def calculate_gpa_average(gpas):
+    print("GPA Average is ", format(sum(gpas)/len(gpas), ".2f"))
 #main function
 def main():
     file_path = input("Please enter the file name to load students information: ")
@@ -101,23 +124,56 @@ def main():
         ids = []
         gpas = []
         load_students(file_path, names, ids, gpas)
+
+        #When the user selects the option to list the students
         if menu_option.upper() == 'L':
             list_students(names, ids, gpas)
 
+        #When the user selects the option to add the students
         elif menu_option.upper() == 'A':
             print("Adding a student .....")
             add_students(names, ids, gpas)
             if flag == True:
                 update_students(file_path, names, ids, gpas)
+
+        #When the user selects the option to edit the students
         elif menu_option.upper() == 'E':
             id_check = input("Enter the student ID to edit: ")
             if id_check in ids:
+                global index
                 index = ids.index(id_check)
                 edit_student(index, names, ids, gpas)
                 update_students(file_path, names, ids, gpas)
             else:
                 print(f"A student with ID {id_check} does not exist.")
-                
+
+        #When the user selects the option to delete the students
+        elif menu_option.upper() == 'D':
+            option_delete = input("Enter the student ID to delete: ")
+            if option_delete in ids:
+                index = ids.index(option_delete)
+                delete_student(index, names, ids, gpas)
+                update_students(file_path, names, ids, gpas)
+            else:
+                print(f"No student with ID {option_delete}")
+        
+        #When the user selects the option to find the students
+        elif menu_option.upper() == 'F':
+            id = input("Enter the student ID to find: ")
+            find_student(id, ids)
+            if flag == True:
+                display_student_header()
+                display_student(index, names, ids, gpas)
+        
+        #When the user selects the option to calculate the average GPA
+        elif menu_option.upper() == 'G':
+            calculate_gpa_average(gpas)
+        
+        #When the user selects the option to quit
+        elif menu_option.upper() == 'Q':
+            print("Thanks and Good Bye")
+            print("Please press enter to continue....")
+            break
     else:
         print(file_path, "does not exist - Bye")
 main()
