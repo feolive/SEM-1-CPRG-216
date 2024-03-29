@@ -1,0 +1,254 @@
+PS E:\SAIT\SEM-1-CPRG-216\Group Assignment 3> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Group Assignment 3/Group-10-Assignment.py"
+Please enter the file name to load students information: xyz.txt
+xyz.txt does not exist - Bye
+PS E:\SAIT\SEM-1-CPRG-216\Group Assignment 3> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Group Assignment 3/Group-10-Assignment.py"
+Please enter the file name to load students information: E:\SAIT\SEM-1-CPRG-216\Group Assignment 3\students.txt
+Students information has been loaded from the file
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+M
+Invalid Input
+l
+===========================================================================
+Student Name                    Student ID                              GPA
+===========================================================================
+John Smith                          111                                71.5
+Maria Jordana                       222                                93.7
+Angie Jones                         333                                87.3
+Sam Philips                         342                                62.3
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+F
+Enter the student ID to find: 333
+===========================================================================
+Student Name                    Student ID                              GPA
+===========================================================================
+===========================================================================
+Student Name                    Student ID                              GPA
+===========================================================================
+Angie Jones                         333                                87.3
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+f
+Enter the student ID to find: 555
+No student with ID 555
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+a
+Adding a student .....
+Enter the student ID: 333
+A student with ID 333 already exists.
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+A
+Adding a student .....
+Enter the student ID: 444
+Enter the student name: Sarah Li
+Enter the student GPA: 87
+A student with ID 444 is added.
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+f
+Enter the student ID to find: 444
+===========================================================================
+Student Name                    Student ID                              GPA
+===========================================================================
+===========================================================================
+Student Name                    Student ID                              GPA
+===========================================================================
+Sarah Li                            444                                87.0
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+E
+Enter the student ID to edit: 222
+Enter the new student name to edit: Maria Jordana
+Enter the new student ID to edit: 222
+Enter the new student GPA to edit: 93.7
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+f
+Enter the student ID to find: 222
+===========================================================================
+Student Name                    Student ID                              GPA
+===========================================================================
+===========================================================================
+Student Name                    Student ID                              GPA
+===========================================================================
+Maria Jordana                       222                                93.7
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+D
+Enter the student ID to delete: 123
+No student with ID 123
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+d
+Enter the student ID to delete: 342
+Student with ID 342 is deleted.
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+f
+Enter the student ID to find: 342
+No student with ID 342
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+G
+GPA Average is  84.88
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+Q
+Thanks and Good Bye
+Please press enter to continue....
+PS E:\SAIT\SEM-1-CPRG-216\Group Assignment 3> & E:/Python/python.exe "e:/SAIT/SEM-1-CPRG-216/Group Assignment 3/Group-10-Assignment.py"
+Please enter the file name to load students information: E:\SAIT\SEM-1-CPRG-216\Group Assignment 3\students.txt
+Students information has been loaded from the file
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+L
+===========================================================================
+Student Name                    Student ID                              GPA
+===========================================================================
+John Smith                          111                                71.5
+Maria Jordana                       222                                93.7
+Angie Jones                         333                                87.3
+Sarah Li                            444                                87.0
+***************************************************************************
+                    *** Student Registration System ***
+***************************************************************************
+Select from the following options
+L - List Students
+A - Add Student
+E - Edit Student
+D - Delete Student
+F - Find A Student
+G - GPA Average
+Q - Quit
+q
+Thanks and Good Bye
+Please press enter to continue....
+PS E:\SAIT\SEM-1-CPRG-216\Group Assignment 3> 

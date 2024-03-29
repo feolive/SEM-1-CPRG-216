@@ -119,6 +119,8 @@ def calculate_gpa_average(gpas):
 #main function
 def main():
     file_path = input("Please enter the file name to load students information: ")
+    if os.path.isfile(file_path) == True:
+        print("Students information has been loaded from the file")
     while os.path.isfile(file_path) == True:
         menu()
         names = []
@@ -160,7 +162,7 @@ def main():
         
         #When the user selects the option to find the students
         elif menu_option.upper() == 'F':
-            id = input("Enter the student ID to find: ")
+            id = input("Enter student id: ")
             find_student(id, ids)
             if flag == True:
                 display_student_header()
