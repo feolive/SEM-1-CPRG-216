@@ -1,5 +1,6 @@
 #Importing the os module
 import os
+
 #Declaring the global variables
 flag = None
 menu_option = ""
