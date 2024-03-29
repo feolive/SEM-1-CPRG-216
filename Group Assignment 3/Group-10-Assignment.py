@@ -115,6 +115,7 @@ def find_student(id, ids):
 #Function to calculate the average GPA
 def calculate_gpa_average(gpas):
     print("GPA Average is ", format(sum(gpas)/len(gpas), ".2f"))
+    
 #main function
 def main():
     file_path = input("Please enter the file name to load students information: ")
