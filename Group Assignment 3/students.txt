@@ -2,4 +2,3 @@ John Smith,111,71.5
 Maria Jordon,222,95.0
 Angie Jones,333,87.3
 Sam Philips,342,62.3
-sukh,777,77.0

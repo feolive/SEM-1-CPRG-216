@@ -1,7 +1,6 @@
 import os
-
+flag = None
 menu_option = ""
-flag = True
 def load_students(file_path, names, ids, gpas):
     f = open(file_path, "r")
     lines = f.readlines()
@@ -59,6 +58,7 @@ def list_students(names, ids, gpas):
 
 def add_students(names, ids, gpas):
     global flag
+    flag = False
     id = input("Enter the student ID: ")
     if id not in ids:
         name = input("Enter the student name: ")
@@ -66,12 +66,11 @@ def add_students(names, ids, gpas):
         names.append(name)
         ids.append(id)
         gpas.append(gpa)
+        flag = True
         return names, ids, gpas, flag
     else:
         print(f"A student with ID {id} already exists.")
         flag = False
-        return flag
-        
     
 def main():
     file_path = input("Please enter the file name to load students information: ")
