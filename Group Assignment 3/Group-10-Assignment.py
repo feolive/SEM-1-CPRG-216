@@ -40,7 +40,7 @@ def menu():
             print("Invalid Input")
 
 def display_student_header():
-    BORDER_DASH = "==========================================================================="
+    BORDER_DASH = "="*75
     print(BORDER_DASH)
     print("{:<25}{:^25}{:>25}".format("Student Name", "Student ID", "GPA"))
     print(BORDER_DASH)
@@ -68,6 +68,7 @@ def add_students(names, ids, gpas):
         ids.append(id)
         gpas.append(gpa)
         flag = True
+        print(f"A student with ID {id} is added.")
         return names, ids, gpas, flag
     else:
         print(f"A student with ID {id} already exists.")
@@ -90,6 +91,7 @@ def main():
             list_students(names, ids, gpas)
 
         elif menu_option.upper() == 'A':
+            print("Adding a student .....")
             add_students(names, ids, gpas)
             if flag == True:
                 update_students(file_path, names, ids, gpas)
