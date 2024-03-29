@@ -1,6 +1,10 @@
+#Importing the os module
 import os
+#Declaring the global variables
 flag = None
 menu_option = ""
+
+#Function to load the students information from the file
 def load_students(file_path, names, ids, gpas):
     f = open(file_path, "r")
     lines = f.readlines()
@@ -12,12 +16,14 @@ def load_students(file_path, names, ids, gpas):
     f.close()
     return names, ids, gpas
 
+#Function to update the students information in the file
 def update_students(file_path, names, ids, gpas):
     f = open(file_path, "w")
     for i in range(len(names)):
         f.write(names[i] + "," + ids[i] + "," + str(gpas[i]) + "\n")
     f.close()
- 
+
+#Function to display the menu
 def menu():
     BORDER_STAR = "*"*75
     print(BORDER_STAR)
@@ -39,16 +45,19 @@ def menu():
         else:
             print("Invalid Input")
 
+#Function to display the student header
 def display_student_header():
     BORDER_DASH = "="*75
     print(BORDER_DASH)
     print("{:<25}{:^25}{:>25}".format("Student Name", "Student ID", "GPA"))
     print(BORDER_DASH)
 
+#Function to display the student
 def display_student(index, names, ids, gpas):
     display_student_header()
     print("{:<25}{:^25}{:>25}".format(names[index], ids[index], gpas[index]))
 
+#Function to list the students
 def list_students(names, ids, gpas):
     if len(names) > 0:
         display_student_header()
@@ -57,6 +66,7 @@ def list_students(names, ids, gpas):
     else:
         print("Students list has no students")
 
+#Function to add the students
 def add_students(names, ids, gpas):
     global flag
     flag = False
@@ -73,12 +83,15 @@ def add_students(names, ids, gpas):
     else:
         print(f"A student with ID {id} already exists.")
         flag = False
+
+#Function to edit the students
 def edit_student(index, names, ids, gpas):
     names[index] = input("Enter the new student name to edit: ")
     ids[index] = input("Enter the new student ID to edit: ")
     gpas[index] = float(input("Enter the new student GPA to edit: "))
     return names, ids, gpas
 
+#main function
 def main():
     file_path = input("Please enter the file name to load students information: ")
     while os.path.isfile(file_path) == True:
