@@ -13,8 +13,9 @@ def load_students(file_path, names, ids, gpas):
     return names, ids, gpas
 
 def update_students(file_path, names, ids, gpas):
-    f = open(file_path, "a")
-    f.write(names[-1] + "," + ids[-1] + "," + str(gpas[-1]) + "\n")
+    f = open(file_path, "w")
+    for i in range(len(names)):
+        f.write(names[i] + "," + ids[i] + "," + str(gpas[i]) + "\n")
     f.close()
  
 def menu():
@@ -71,7 +72,12 @@ def add_students(names, ids, gpas):
     else:
         print(f"A student with ID {id} already exists.")
         flag = False
-    
+def edit_student(index, names, ids, gpas):
+    names[index] = input("Enter the new student name to edit: ")
+    ids[index] = input("Enter the new student ID to edit: ")
+    gpas[index] = float(input("Enter the new student GPA to edit: "))
+    return names, ids, gpas
+
 def main():
     file_path = input("Please enter the file name to load students information: ")
     while os.path.isfile(file_path) == True:
@@ -87,6 +93,15 @@ def main():
             add_students(names, ids, gpas)
             if flag == True:
                 update_students(file_path, names, ids, gpas)
+        elif menu_option.upper() == 'E':
+            id_check = input("Enter the student ID to edit: ")
+            if id_check in ids:
+                index = ids.index(id_check)
+                edit_student(index, names, ids, gpas)
+                update_students(file_path, names, ids, gpas)
+            else:
+                print(f"A student with ID {id_check} does not exist.")
+                
     else:
         print(file_path, "does not exist - Bye")
 main()
