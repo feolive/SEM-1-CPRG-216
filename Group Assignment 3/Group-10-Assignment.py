@@ -87,9 +87,9 @@ def add_students(names, ids, gpas):
 
 #Function to edit the students
 def edit_student(index, names, ids, gpas):
-    names[index] = input("Enter the new student name to edit: ")
-    ids[index] = input("Enter the new student ID to edit: ")
-    gpas[index] = float(input("Enter the new student GPA to edit: "))
+    names[index] = input("Enter student name: ")
+    ids[index] = input("Enter student ID: ")
+    gpas[index] = float(input("Enter student GPA: "))
     return names, ids, gpas
 
 #Function to delete the students
@@ -140,7 +140,7 @@ def main():
 
         #When the user selects the option to edit the students
         elif menu_option.upper() == 'E':
-            id_check = input("Enter the student ID to edit: ")
+            id_check = input("Enter student id: ")
             if id_check in ids:
                 global index
                 index = ids.index(id_check)
