@@ -1,3 +1,6 @@
+‘’‘
+group assignment3: student management system
+’‘’
 #Importing the os module
 import os
 
