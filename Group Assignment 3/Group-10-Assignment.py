@@ -8,6 +8,9 @@ index = 0
 
 #Function to load the students information from the file
 def load_students(file_path, names, ids, gpas):
+    '''
+    This function reads the text file given in the parameter and stores the student names, ids and gpas in the respective lists.
+    '''
     f = open(file_path, "r")
     lines = f.readlines()
     for line in lines:
@@ -20,6 +23,9 @@ def load_students(file_path, names, ids, gpas):
 
 #Function to update the students information in the file
 def update_students(file_path, names, ids, gpas):
+    '''
+    This function writes the student names, ids and gpas to the text file given in the parameter.
+    '''
     f = open(file_path, "w")
     for i in range(len(names)):
         f.write(names[i] + "," + ids[i] + "," + str(gpas[i]) + "\n")
@@ -27,6 +33,9 @@ def update_students(file_path, names, ids, gpas):
 
 #Function to display the menu
 def menu():
+    '''
+    This function displays the menu options to the user and takes the user input.
+    '''
     BORDER_STAR = "*"*75
     print(BORDER_STAR)
     print("{:^{}}".format("*** Student Registration System ***", len(BORDER_STAR)))
@@ -49,6 +58,9 @@ def menu():
 
 #Function to display the student header
 def display_student_header():
+    '''
+    This function displays the header of the student information table.
+    '''
     BORDER_DASH = "="*75
     print(BORDER_DASH)
     print("{:<25}{:^25}{:>25}".format("Student Name", "Student ID", "GPA"))
@@ -56,10 +68,16 @@ def display_student_header():
 
 #Function to display the student
 def display_student(index, names, ids, gpas):
+    '''
+    This function displays the student information in the table format.
+    '''
     print("{:<25}{:^25}{:>25}".format(names[index], ids[index], gpas[index]))
 
 #Function to list the students
 def list_students(names, ids, gpas):
+    '''
+    This function lists the student information in the table format.
+    '''
     if len(names) > 0:
         display_student_header()
         for i in range(len(names)):
@@ -69,6 +87,9 @@ def list_students(names, ids, gpas):
 
 #Function to add the students
 def add_students(names, ids, gpas):
+    '''
+    This function adds the student information to the respective lists.
+    '''
     global flag
     flag = False
     id = input("Enter the student ID: ")
@@ -87,6 +108,9 @@ def add_students(names, ids, gpas):
 
 #Function to edit the students
 def edit_student(index, names, ids, gpas):
+    '''
+    This function edits the student information in the respective lists.
+    '''
     names[index] = input("Enter student name: ")
     ids[index] = input("Enter student ID: ")
     gpas[index] = float(input("Enter student GPA: "))
@@ -94,6 +118,9 @@ def edit_student(index, names, ids, gpas):
 
 #Function to delete the students
 def delete_student(index, names, ids, gpas):
+    '''
+    This function deletes the student information from the respective lists.
+    '''
     names = names.pop(index)
     ids = ids.pop(index)
     gpas = gpas.pop(index)
@@ -101,6 +128,9 @@ def delete_student(index, names, ids, gpas):
     return names, ids, gpas
 
 def find_student(id, ids):
+    '''
+    This function finds the student with the given ID in the list of IDs.
+    '''
     if id in ids:
         global index
         global flag
@@ -113,10 +143,16 @@ def find_student(id, ids):
 
 #Function to calculate the average GPA
 def calculate_gpa_average(gpas):
+    '''
+    This function calculates the average GPA of the students.
+    '''
     print("GPA Average is ", format(sum(gpas)/len(gpas), ".2f"))
     
 #main function
 def main():
+    '''
+    This is the main function which calls all the other functions.
+    '''
     file_path = input("Please enter the file name to load students information: ")
     if os.path.isfile(file_path) == True:
         print("Students information has been loaded from the file")
